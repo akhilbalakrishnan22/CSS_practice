@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+    <div class="loading">
+        <h2 id="old_year"></h2>
+        <div class="bar"></div>
+        <h2 id="new_year"></h2>
+    </div>
+
+    <div class="center">
+
+        <div>
+            <h2>Happy New Year</h2>
+        </div>
+
+        <div></div>
+
+        <div>
+            <h2 id="wishYear"></h2>
+        </div>
+
+        <div></div>
+
+    </div>
+
+    <script type="text/javascript">
+        let y = new Date();
+        let year = y.getFullYear();
+        // console.log(year);
+        function getYear() {
+            let prevYear = year - 1;
+            let newYear = year;
+            document.getElementById('old_year').innerHTML = prevYear;
+            document.getElementById('new_year').innerHTML = newYear;
+            document.getElementById('wishYear').innerHTML = newYear;
+        }
+        getYear();
+    </script>
+
+</body>
+
+</html>
