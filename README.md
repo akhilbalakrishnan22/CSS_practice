@@ -1,2 +1,2 @@
 # css_practice
-This repo contains css practice code
+This repo contains css animations effects practice codes.
